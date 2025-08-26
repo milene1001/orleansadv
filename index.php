@@ -19,13 +19,13 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-            <link rel="canonical" href="https://www.caioorleansadv.com.br/index.php" />
+            <link rel="canonical" href="https://www.caioorleansadv.com.br/" />
 
             <!-- Open Graph -->
             <meta property="og:title" content="Caio Orleans - Advocacia e Assessoria Jurídica" />
             <meta property="og:description" content="Especializados em direito bancário, consumidor, imobiliário e previdenciário. Atendimento humanizado e personalizado." />
             <meta property="og:image" content="https://www.caioorleansadv.com.br/images/caio-orleans-logo.png" />
-            <meta property="og:url" content="https://www.caioorleansadv.com.br/index.php" />
+            <meta property="og:url" content="https://www.caioorleansadv.com.br/" />
             <meta property="og:type" content="website" />
 
             <!-- Twitter Card -->
@@ -41,6 +41,11 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
             <link rel="stylesheet" href="assets/css/main.css" />
             <link rel="stylesheet" href="assets/css/custom.css" />
             <script src="https://kit.fontawesome.com/90ee6c478d.js" crossorigin="anonymous"></script>
+
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+            <link rel="manifest" href="/site.webmanifest">
 
         <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-K66927NPKW"></script>
@@ -64,7 +69,7 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
                 
                     <!-- Logo -->
                     <div id="logo">
-                        <a href="index.php">
+                        <a href="/">
                             <img src="images/caio-orleans-logo.png" alt="Caio Orleans" />
                         </a>
                     </div>
@@ -188,8 +193,7 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
                     <div class="title">Conteúdo Jurídico</div>
                     <div class="container">
                         <header class="style1">
-                            <h2>Mantenha-se informado sobre seus direitos</h2>
-                            <p>Artigos e orientações jurídicas para esclarecer suas dúvidas e proteger seus interesses.</p>
+                            <h2>Últimas notícias</h2>
                         </header>
                         
                         <div class="row aln-center">
@@ -211,7 +215,7 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
                                                 $description = htmlspecialchars($description);
                                                 echo strlen($description) > 100 ? substr($description, 0, 100) . '...' : $description;
                                             ?></p>
-                                            <ul class="actions">
+                                            <ul class="actions mx-auto">
                                                 <li><a href="<?php echo htmlspecialchars($articleUrl); ?>" target="_blank" class="button style1">Saiba mais</a></li>
                                             </ul>
                                         </section>
@@ -243,7 +247,6 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
                                 <ul class="style2">
                                     <li><strong>Atendimento personalizado</strong> - Cada caso é único e merece atenção exclusiva</li>
                                     <li><strong>Transparência total</strong> - Você sempre saberá o andamento do seu processo</li>
-                                    <li><strong>Experiência comprovada</strong> - Anos de atuação em diversas áreas do direito</li>
                                     <li><strong>Resultados efetivos</strong> - Focamos em soluções concretas para seus problemas</li>
                                 </ul>
                             </div>

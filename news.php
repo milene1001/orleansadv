@@ -12,7 +12,7 @@ if (!$apiKey && file_exists($envPath)) {
 }
 if (!$apiKey) {
     $_SESSION['news_error'] = 'NEWSAPI_KEY not configured. Set it in .env or server environment.';
-    header('Location: index.php');
+    header('Location: /');
     exit;
 }
 
@@ -26,7 +26,7 @@ if (file_exists($cacheFile) && (time() - filemtime($cacheFile) < $cacheTime)) {
     $cachedData = json_decode(file_get_contents($cacheFile), true);
     if ($cachedData && isset($cachedData['articles'])) {
         $_SESSION['news_articles'] = $cachedData['articles'];
-        header('Location: index.php');
+        header('Location: /');
         exit;
     }
 }
@@ -50,7 +50,7 @@ $response = curl_exec($ch);
 // Check for errors
 if(curl_errno($ch)) {
     $_SESSION['news_error'] = curl_error($ch);
-    header('Location: index.php');
+    header('Location: /');
     exit;
 }
 
@@ -83,7 +83,7 @@ if ($data && isset($data['articles']) && !empty($data['articles'])) {
     $_SESSION['news_error'] = 'Invalid response from API or no articles found';
 }
 
-// Redirect to index.php
-header('Location: index.php');
+// Redirect to site root
+header('Location: /');
 exit;
 ?> 
