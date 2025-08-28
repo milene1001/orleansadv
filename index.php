@@ -264,7 +264,7 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
                                         <div class="col-12">
                                             <section>
                                                 <h4 class="icon solid fa-envelope">Email</h4>
-                                                <p><a href="mailto:contato@caioorleansadv.com.br">contato@caioorleans.com.br</a><br />
+                                                <p><a href="mailto:contato@caioorleansadv.com.br">contato@caioorleansadv.com.br</a><br />
                                                 <em>Resposta em até 24 horas</em></p>
                                             </section>
                                         </div>
