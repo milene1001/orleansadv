@@ -283,6 +283,11 @@ if (!isset($_SESSION['news_articles']) || empty($_SESSION['news_articles'])) {
                 </section>
             </div>
 
+            <!-- Floating WhatsApp Button -->
+            <a href="https://wa.me/5588992389350" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
             <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/jquery.dropotron.min.js"></script>

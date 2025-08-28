@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Canonical redirects: force clean URLs
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^news\.php$ /news [R=301,L]
+
+# Internally route clean URLs to PHP scripts
+RewriteRule ^$ index.php [L]
+RewriteRule ^news/?$ news.php [L,QSA]
+
+# Do not interfere with existing files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule . - [L]
+
+
